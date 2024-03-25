@@ -16,4 +16,10 @@ percentage = tip_percentage * tip_input
 
 #total and round it up to 2 number
 total = percentage / people_split
-print(total.__round__(2))
+new_total = total.__round__(2)
+
+#bill and the tip
+bill_tip = new_total + bill_input
+
+print(f"Each person owes {new_total} tip")
+print(f"Your total plus tip is {bill_tip}")
